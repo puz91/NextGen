@@ -1,0 +1,16 @@
+body{
+    background-color: blueviolet;
+}
+h1{
+    background-color: blue;
+    color:aliceblue;
+    
+}
+p{
+    color: aquamarine;
+    font-size: 14px;
+}
+h3,h2{
+    color:bisque;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id ="my_button">click me</button>
+    <script>
+        let new_el=document.createElement('div');
+        new_el.innerText="This is new element";
+        new_el.style.background="green";
+        let btn = document.getElementById("my_button");
+        btn.addEventListener('click',function(){
+            new_el.style.background="pink";
+        });
+        let x=-10;
+        function f1(a){
+            console.log(a+" more than 5")
+        }
+        function f2(a){
+            console.log(a)
+            console.log(a+" more than 3")
+        }
+        function f3(a){
+            console.log(a)
+            console.log(a+" less than 3")
+            return(x)
+        }
+        if(x>5){
+            f1(x);
+        }
+        else if(x>2){
+            f2(x);
+        }
+        else{
+            f3(x);
+            const result=x+7;
+            console.log(result);
+        }
+    </script>
+</body>
+</html>

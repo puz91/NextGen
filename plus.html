@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "box">
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+    </div>
+    <div id="element1"></div>
+    <script>
+        let x=0;
+        let e1=document.getElementById("element1");
+        e1.innerHTML=x;
+        // const p = document.createElement('p')
+        // p.innerHTML=x
+        let btn = document.getElementById("plus");
+        btn.addEventListener('click',function(){
+            // console.log(x++);
+            // p.innerHTML=x
+            x+=1
+            e1.innerText=x;
+            if(x>5){
+            
+            e1.style.background="pink";
+        }
+        else if(x>=0){
+            e1.style.background="white";
+        }
+        else{
+            e1.style.background="red";
+        }
+        });
+        let bt = document.getElementById("minus");
+        bt.addEventListener('click',function(){
+            // console.log(x++);
+            // p.innerHTML=x
+            x-=1
+            e1.innerText=x;
+            if(x>5){
+            
+            e1.style.background="pink";
+        }
+        else if(x>=0){
+            e1.style.background="white";
+        }
+        else{
+            e1.style.background="red";
+        }
+        });
+        
+    </script>
+</body>
+</html>
